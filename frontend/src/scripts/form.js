@@ -114,13 +114,13 @@ const employeePut = async (id) => {
         document.getElementById('cnpj').checked = true;
     }
 
-    var name = document.getElementById('name').value = employee.name;
-    var mail = document.getElementById('mail').value = employee.mail;
-    var cep = document.getElementById('cep').value = employee.cep;
-    var street = document.getElementById('street').value = employee.street;
-    var district = document.getElementById('district').value = employee.district;
-    var city = document.getElementById('city').value = employee.city;
-    var state = document.getElementById('state').value = employee.state;
+    document.getElementById('name').value = employee.name;
+    document.getElementById('mail').value = employee.mail;
+    document.getElementById('cep').value = employee.cep;
+    document.getElementById('street').value = employee.street;
+    document.getElementById('district').value = employee.district;
+    document.getElementById('city').value = employee.city;
+    document.getElementById('state').value = employee.state;
 
 }
 
