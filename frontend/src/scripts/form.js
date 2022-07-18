@@ -35,14 +35,14 @@ const newEmployee = async (event) => {
         alert(`${cpfCnpj.length > 14 ? 'CNPJ' : 'CPF' } inválido!`);
     } 
 
-    if (document.getElementById('cnpj').checked && cpfCnpj.length < 18) {
+    else if (document.getElementById('cnpj').checked && cpfCnpj.length < 18) {
         alert('O campo CNPJ precisa conter 18 dígitos!');
     }
     else if (document.getElementById('cpf').checked && cpfCnpj.length < 14) {
         alert('O campo CPF precisa conter 14 dígitos!');
     }
 
-    if (cep.length < 9) {
+    else if (cep.length < 9) {
         alert('O campo CEP precisa conter 9 dígitos!');
     }
 
