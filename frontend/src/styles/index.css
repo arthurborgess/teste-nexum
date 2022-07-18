@@ -1,0 +1,133 @@
+header {
+    width: 100vw;
+    height: 60px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content ul {
+    list-style-type: none;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.header-content ul li a {
+    text-decoration: none;
+    color: #666;
+    transition: 0.3s;
+}
+
+.header-content ul li a:hover {
+    color: #00c6b9;
+}
+
+main {
+    margin: 50px auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+main h2 {
+    color: #00c6b9;
+    margin-bottom: 20px;
+}
+
+.employees-table {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.employees-table-data {
+    margin-top: 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.employees-table,
+.employees-table-data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.name {
+    width: 22.5%;
+}
+
+.cpf-cnpj {
+    width: 20%;
+}
+
+.mail {
+    width: 25%;
+}
+
+.city {
+    width: 20%;
+}
+
+.uf {
+    width: 7.5%;
+}
+
+.actions {
+    width: 5%;
+}
+
+.actions-svg {
+    width: 5%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-icon,
+.delete-icon {
+    height: 100%;
+    cursor: pointer;
+}
+.edit-icon:hover {
+    filter: invert(24%) sepia(99%) saturate(4994%) hue-rotate(239deg) brightness(101%) contrast(103%);
+}
+.delete-icon:hover {
+    filter: invert(41%) sepia(95%) saturate(7476%) hue-rotate(354deg) brightness(105%) contrast(125%);
+}
+.add-employee-btn {
+    margin-top: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-self: flex-end;
+    border: none;
+    font-size: 35px;
+    background-color: #00c6b9;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.add-employee-btn:hover {
+    background-color: #00e7d8;
+}
+
+.add-employee-btn a {
+    text-decoration: none;
+    color: #FFF;
+}

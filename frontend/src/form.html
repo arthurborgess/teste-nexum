@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <title>Cadastro de Colaborador</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./assets/logo-nexum.png" alt="Logo Nexum">
+            <ul>
+                <li><a href="./form.html">Cadastrar</a></li>
+                <li><a href="../index.html">Listar</a></li>
+            </ul>
+        </div>
+    </header>
+    <main id="main">
+        <form onsubmit="newEmployee(event)" id="new-employee-form">
+            <h2 id="form-title">Cadastrar</h2>
+            <input type="text" required minlength="3" maxlength="50" placeholder="Nome" id="name" name="name">
+            <input type="email" required minlength="10" maxlength="50" placeholder="E-mail" id="mail">
+            <div class="person">
+                <span>Tipo de pessoa:</span>
+                <div>
+                    <input type="radio" name="person" id="cpf" value="cpf" checked onclick="setCpf()">
+                    <label for="cpf">CPF</label><br>
+                </div>
+                <div>
+                    <input type="radio" name="person" id="cnpj" value="cnpj" onclick="setCnpj()">
+                    <label for="cnpj'">CNPJ</label>
+                </div>
+            </div>
+            <input type="text" required placeholder="CPF" id="cpf-cnpj" minlength="14">
+            <input type="text" required placeholder="CEP" id="cep" onkeyup="getCep(event)" minlength="9">
+            <input type="text" readonly placeholder="Logradouro" id="street">
+            <input type="text" readonly placeholder="Bairro" id="district">
+            <input type="text" readonly placeholder="Cidade" id="city">
+            <input type="text" readonly placeholder="Estado" id="state">
+            <button type="submit" id="form-button">Cadastrar</button>
+        </form>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.13/jquery.mask.min.js"></script>
+    <script src="./scripts/form.js"></script>
+</body>
+
+</html>
